@@ -40,7 +40,7 @@ if (numbersSection) {
 }
 
 // Portfolio modal functionality
-const portfolioItems = document.querySelectorAll('.visual-item:not(.visual-cta)');
+const portfolioItems = document.querySelectorAll('.visual-item:not(.visual-cta), .carousel-tile:not(.tile-cta)');
 const modal = document.getElementById('portfolioModal');
 const modalImg = document.getElementById('modalImg');
 const modalTitle = document.getElementById('modalTitle');
@@ -48,10 +48,23 @@ const modalText = document.getElementById('modalText');
 
 if (portfolioItems.length > 0 && modal) {
     portfolioItems.forEach(item => {
-        item.addEventListener('click', () => {
-            modalImg.src = item.dataset.image;
-            modalTitle.textContent = item.dataset.title;
-            modalText.textContent = item.dataset.text;
+        item.addEventListener('click', (e) => {
+            // Don't open modal for CTA tiles
+            if (item.classList.contains('tile-cta') || item.classList.contains('visual-cta')) {
+                return;
+            }
+
+            e.preventDefault();
+            
+            if (item.dataset.image) {
+                modalImg.src = item.dataset.image;
+            }
+            if (item.dataset.title) {
+                modalTitle.textContent = item.dataset.title;
+            }
+            if (item.dataset.text) {
+                modalText.textContent = item.dataset.text;
+            }
 
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
