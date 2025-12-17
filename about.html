@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nukta Africa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Nukta Africa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <body>
+    <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
 
-</head>
+    <section class="about-hero">
+      <div class="hero-overlay"></div>
 
-<body>
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <img src="images/logo.png" alt="Nukta Africa" />
+        </div>
 
-  <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+        <!-- DESKTOP NAV -->
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="services.html">Products & Services</a>
+          <a href="about.html" class="active">About Us</a>
+          <a href="team.html">Team</a>
+          <a href="impact.html">Impact</a>
+          <a href="careers.html">Careers</a>
+          <a href="stories.html">Stories</a>
+          <a href="training.html">Trainings</a>
+          <a href="contact.html">Contact</a>
+        </nav>
 
+        <!-- MOBILE MENU BUTTON -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
 
-  <section class="about-hero">
-
-    <div class="hero-overlay"></div>
-
-    <!-- HEADER -->
-    <header class="header">
-      <div class="logo">
-        <img src="images/logo.png" alt="Nukta Africa">
-      </div>
-
-      <!-- DESKTOP NAV -->
-      <nav class="nav">
+      <!-- MOBILE NAV -->
+      <div class="mobile-nav" id="mobileNav">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="services.html">Products & Services</a>
+        <a href="services.html">Products & Services</a>-e
         <a href="about.html" class="active">About Us</a>
         <a href="team.html">Team</a>
         <a href="impact.html">Impact</a>
@@ -37,308 +57,322 @@
         <a href="stories.html">Stories</a>
         <a href="training.html">Trainings</a>
         <a href="contact.html">Contact</a>
-      </nav>
-
-      <!-- MOBILE MENU BUTTON -->
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
       </div>
-    </header>
 
-    <!-- MOBILE NAV -->
-    <div class="mobile-nav" id="mobileNav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="services.html">Products & Services</a>-e
-      <a href="about.html" class="active">About Us</a>
-      <a href="team.html">Team</a>
-      <a href="impact.html">Impact</a>
-      <a href="careers.html">Careers</a>
-      <a href="stories.html">Stories</a>
-      <a href="training.html">Trainings</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- HERO CONTENT -->
-    <!-- <div class="hero-content">
+      <!-- HERO CONTENT -->
+      <!-- <div class="hero-content">
         <span class="welcome">WELCOME!</span>
         <h1>Home of digital & data storytelling</h1>
         <a href="#about" class="hero-btn">READ MORE</a>
     </div> -->
 
-    <div class="about-hero-content">
-      <h1 class="about-title">About</h1>
+      <div class="about-hero-content">
+        <h1 class="about-title">About</h1>
 
-      <p class="about-text">
-        We provide training and develop digital and data-driven content to improve people’s lives. We are working with
-        journalists, media organisations, NGOs and corporates on creating impactful stories
-      </p>
-    </div>
-
-
-
-
-
-  </section>
-
-  <!-- ================= ABOUT SPLIT SECTION ================= -->
-  <section class="about-split-section">
-
-    <!-- TOP DARK AREA -->
-    <div class="about-split-top">
-      <div class="about-top-left">
-        <span class="about-mini-title">OUR MISSION</span>
-        <h2>
-          As one of the fastest growing digital media companies, Nukta Africa aims to transform people’s lives through
-          data and digital tools and content
-        </h2>
-      </div>
-
-      <div class="about-top-right">
-        <h4>OUR VISION</h4>
-
-        <p>
-          We aim at becoming the leading and most innovative digital media company in Sub-Saharan Africa that transforms
-          lives through data and digital content
+        <p class="about-text">
+          We provide training and develop digital and data-driven content to
+          improve people’s lives. We are working with journalists, media
+          organisations, NGOs and corporates on creating impactful stories
         </p>
-
       </div>
-    </div>
+    </section>
 
-    <!-- FLOATING IMAGE -->
-    <div class="about-floating-image">
-      <img src="images/about-team.jpg" alt="Team Discussion">
-    </div>
+    <!-- ================= ABOUT SPLIT SECTION ================= -->
+    <section class="about-split-section">
+      <!-- TOP DARK AREA -->
+      <div class="about-split-top">
+        <div class="about-top-left">
+          <span class="about-mini-title">OUR MISSION</span>
+          <h2>
+            As one of the fastest growing digital media companies, Nukta Africa
+            aims to transform people’s lives through data and digital tools and
+            content
+          </h2>
+        </div>
 
-    <!-- BOTTOM DARK AREA -->
-    <div class="about-split-bottom">
-      <!-- <span class="about-mini-title">A TRUE PARTNERSHIP</span> -->
+        <div class="about-top-right">
+          <h4>OUR VISION</h4>
 
-      <h3>
-        <!-- Our client list speaks for itself sed
+          <p>
+            We aim at becoming the leading and most innovative digital media
+            company in Sub-Saharan Africa that transforms lives through data and
+            digital content
+          </p>
+        </div>
+      </div>
+
+      <!-- FLOATING IMAGE -->
+      <div class="about-floating-image">
+        <img src="images/about-team.jpg" alt="Team Discussion" />
+      </div>
+
+      <!-- BOTTOM DARK AREA -->
+      <div class="about-split-bottom">
+        <!-- <span class="about-mini-title">A TRUE PARTNERSHIP</span> -->
+
+        <h3>
+          <!-- Our client list speaks for itself sed
             non mauris vitae erat consequat
             auctor eu in elit class aptent. -->
-      </h3>
-    </div>
+        </h3>
+      </div>
+    </section>
 
-  </section>
+    <section class="life-mentor">
+      <div class="life-container">
+        <!-- LEFT CONTENT -->
+        <div class="life-left">
+          <span class="life-tag">MORE ABOUT US</span>
+          <h2>Our Purpose & Belief System</h2>
+          <p>
+            We believe that data, when transformed into meaningful stories, has
+            the power to improve lives, influence decisions, and drive positive
+            change.
+          </p>
+          <p>We exist to:</p>
+          <ul>
+            <li>
+              Empower individuals, organisations, and communities through data
+              and digital storytelling.
+            </li>
+            <li>
+              Promote transparency, accountability, and evidence-based
+              decision-making.
+            </li>
+            <li>
+              Democratise access to data, technology, and storytelling tools, so
+              that knowledge is not only for a few, but for everyone.
+            </li>
+            <li>
+              Strengthen journalism, communication, and public awareness through
+              accurate, original, and ethical storytelling.
+            </li>
+            <li>
+              Use stories for social good — advancing education, business
+              growth, environmental awareness, innovation, and sustainable
+              development.
+            </li>
+          </ul>
+          <p>
+            We believe that informed people make better choices, and better
+            choices build stronger societies.
+          </p>
+        </div>
 
+        <!-- RIGHT ACCORDION -->
+        <div class="life-right">
+          <div class="life-item active">
+            <div class="life-title">
+              We are data-first storytellers.
+              <span class="arrow"></span>
+            </div>
+            <div class="life-content">
+              <p>
+                Every story we tell is guided by facts, verified data, and deep
+                analysis — not speculation.
+              </p>
+            </div>
+          </div>
 
-  <section class="life-mentor">
-    <div class="life-container">
+          <div class="life-item">
+            <div class="life-title">
+              We combine data, journalism, design, and technology under one
+              roof.
+              <span class="arrow"></span>
+            </div>
+            <div class="life-content">
+              <p>
+                From data collection to visualization to publishing, we offer a
+                complete storytelling ecosystem.
+              </p>
+            </div>
+          </div>
 
-      <!-- LEFT CONTENT -->
-      <div class="life-left">
-        <span class="life-tag">MORE ABOUT US</span>
-        <h2>Our Purpose & Belief System</h2>
-        <p> We believe that data, when transformed into meaningful stories, has the power to improve lives, influence
-          decisions, and drive positive change.</p>
-        <p>We exist to:</p>
-        <ul>
-          <li>Empower individuals, organisations, and communities through data and digital storytelling.</li>
-          <li>Promote transparency, accountability, and evidence-based decision-making.</li>
-          <li>Democratise access to data, technology, and storytelling tools, so that knowledge is not only for a few,
-            but for everyone.</li>
-          <li>Strengthen journalism, communication, and public awareness through accurate, original, and ethical
-            storytelling.</li>
-          <li>Use stories for social good — advancing education, business growth, environmental awareness, innovation,
-            and sustainable development.</li>
-        </ul>
-        <p>We believe that informed people make better choices, and better choices build stronger societies.</p>
+          <div class="life-item">
+            <div class="life-title">
+              We make data accessible to everyone.
+              <span class="arrow"></span>
+            </div>
+            <div class="life-content">
+              <p>
+                Through Swahili and simple digital formats, we turn complex
+                information into clear, relatable stories.
+              </p>
+            </div>
+          </div>
+
+          <div class="life-item">
+            <div class="life-title">
+              We provide affordable, high-quality data visualization and
+              infographics.
+              <span class="arrow"></span>
+            </div>
+            <div class="life-content">
+              <p>
+                This allows even small organisations to communicate big ideas
+                with impact.
+              </p>
+            </div>
+          </div>
+
+          <div class="life-item">
+            <div class="life-title">
+              We build capacity, not just content.
+              <span class="arrow"></span>
+            </div>
+            <div class="life-content">
+              <p>
+                Through training, mentorship, and hands-on support, we equip
+                others with practical data and storytelling skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="life-item">
+            <div class="life-title">
+              We serve both media and organisations
+              <span class="arrow"></span>
+            </div>
+            <div class="life-content">
+              <p>
+                We work with journalists, NGOs, businesses, researchers, and
+                institutions to amplify impact through data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="core-values-section">
+      <div class="core-values-container">
+        <div class="core-values-header">
+          <span class="core-tag">OUR FOUNDATION</span>
+          <h2>Our Core Values</h2>
+          <p>
+            These principles guide our storytelling, partnerships, and impact.
+          </p>
+        </div>
+
+        <div class="core-values-grid">
+          <div class="core-value-box">
+            <h4>Integrity</h4>
+            <p>
+              We uphold truth, accuracy, and ethical standards in everything we
+              do.
+            </p>
+          </div>
+
+          <div class="core-value-box">
+            <h4>Innovation</h4>
+            <p>
+              We continuously explore new tools, formats, and methods of digital
+              storytelling.
+            </p>
+          </div>
+
+          <div class="core-value-box">
+            <h4>Accessibility</h4>
+            <p>
+              We design data and stories that are easy to understand and widely
+              reachable.
+            </p>
+          </div>
+
+          <div class="core-value-box">
+            <h4>Collaboration</h4>
+            <p>
+              We believe in shared growth through partnerships and knowledge
+              sharing.
+            </p>
+          </div>
+
+          <div class="core-value-box">
+            <h4>Inclusivity</h4>
+            <p>
+              We ensure diverse voices, communities, and perspectives are
+              represented.
+            </p>
+          </div>
+
+          <div class="core-value-box">
+            <h4>Impact</h4>
+            <p>
+              Every project we undertake must contribute to measurable positive
+              change.
+            </p>
+          </div>
+
+          <div class="core-value-box">
+            <h4>Excellence</h4>
+            <p>
+              We pursue quality, professionalism, and continuous improvement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="cta-split">
+      <div class="cta-image">
+        <img src="images/cta.png" alt="Support" />
       </div>
 
-      <!-- RIGHT ACCORDION -->
-      <div class="life-right">
-
-        <div class="life-item active">
-          <div class="life-title">
-            We are data-first storytellers.
-            <span class="arrow"></span>
-          </div>
-          <div class="life-content">
-            <p>
-              Every story we tell is guided by facts, verified data, and deep analysis — not speculation.
-            </p>
-          </div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-title">
-            We combine data, journalism, design, and technology under one roof.
-            <span class="arrow"></span>
-          </div>
-          <div class="life-content">
-            <p>
-              From data collection to visualization to publishing, we offer a complete storytelling ecosystem.
-            </p>
-          </div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-title">
-            We make data accessible to everyone.
-            <span class="arrow"></span>
-          </div>
-          <div class="life-content">
-            <p>
-              Through Swahili and simple digital formats, we turn complex information into clear, relatable stories.
-            </p>
-          </div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-title">
-            We provide affordable, high-quality data visualization and infographics.
-            <span class="arrow"></span>
-          </div>
-          <div class="life-content">
-            <p>
-              This allows even small organisations to communicate big ideas with impact.
-            </p>
-          </div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-title">
-            We build capacity, not just content.
-            <span class="arrow"></span>
-          </div>
-          <div class="life-content">
-            <p>
-              Through training, mentorship, and hands-on support, we equip others with practical data and storytelling
-              skills.
-            </p>
-          </div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-title">
-            We serve both media and organisations
-            <span class="arrow"></span>
-          </div>
-          <div class="life-content">
-            <p>
-              We work with journalists, NGOs, businesses, researchers, and institutions to amplify impact through data.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="core-values-section">
-    <div class="core-values-container">
-
-      <div class="core-values-header">
-        <span class="core-tag">OUR FOUNDATION</span>
-        <h2>Our Core Values</h2>
-        <p>These principles guide our storytelling, partnerships, and impact.</p>
-      </div>
-
-      <div class="core-values-grid">
-
-        <div class="core-value-box">
-          <h4>Integrity</h4>
-          <p>We uphold truth, accuracy, and ethical standards in everything we do.</p>
-        </div>
-
-        <div class="core-value-box">
-          <h4>Innovation</h4>
-          <p>We continuously explore new tools, formats, and methods of digital storytelling.</p>
-        </div>
-
-        <div class="core-value-box">
-          <h4>Accessibility</h4>
-          <p>We design data and stories that are easy to understand and widely reachable.</p>
-        </div>
-
-        <div class="core-value-box">
-          <h4>Collaboration</h4>
-          <p>We believe in shared growth through partnerships and knowledge sharing.</p>
-        </div>
-
-        <div class="core-value-box">
-          <h4>Inclusivity</h4>
-          <p>We ensure diverse voices, communities, and perspectives are represented.</p>
-        </div>
-
-        <div class="core-value-box">
-          <h4>Impact</h4>
-          <p>Every project we undertake must contribute to measurable positive change.</p>
-        </div>
-
-        <div class="core-value-box">
-          <h4>Excellence</h4>
-          <p>We pursue quality, professionalism, and continuous improvement.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- ================= CALL TO ACTION ================= -->
-  <section class="cta-split">
-    <div class="cta-image">
-      <img src="images/cta.png" alt="Support">
-    </div>
-
-    <div class="cta-content">
-      <h3>What can we help you with?</h3>
-      <h2>Let’s get in touch.</h2>
-      <p>
-        We are committed to provide high quality editorial services while
-        abiding to the best business practices of our media industry.
-      </p>
-
-      <a href="#" class="cta-btn">LET’S GET IN TOUCH</a>
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="footer-container">
-
-      <div class="footer-left">
-        <h4>CONTACT</h4>
+      <div class="cta-content">
+        <h3>What can we help you with?</h3>
+        <h2>Let’s get in touch.</h2>
         <p>
-          1st Floor, House 12, Msolomi Street, Mwinjuma Road near<br>
-          Kinondoni Vijana. P.O. Box 76762, Dar es Salaam<br>
-          +255 677 088 088 & +255 750 881 888<br>
-          info@nukta.co.tz
+          We are committed to provide high quality editorial services while
+          abiding to the best business practices of our media industry.
         </p>
 
-        <div class="footer-socials">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="cta-btn">LET’S GET IN TOUCH</a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h4>CONTACT</h4>
+          <p>
+            1st Floor, House 12, Msolomi Street, Mwinjuma Road near<br />
+            Kinondoni Vijana. P.O. Box 76762, Dar es Salaam<br />
+            +255 677 088 088 & +255 750 881 888<br />
+            info@nukta.co.tz
+          </p>
+
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            <span class="red-plus">+</span
+            ><a href="#" class="footer-link"
+              >Privacy and Data Protection policy</a
+            >
+          </p>
+          <p>
+            <span class="red-plus">+</span
+            ><a href="#" class="footer-link">Editorial policy</a>
+          </p>
         </div>
       </div>
 
-      <div class="footer-right">
-        <p><span class="red-plus">+</span><a href="#" class="footer-link">Privacy and Data Protection policy</a></p>
-        <p><span class="red-plus">+</span><a href="#" class="footer-link">Editorial policy</a></p>
+      <div class="footer-bottom">
+        <p>Copyright © 2025 Nukta Africa | Powered by RD-XI</p>
       </div>
+    </footer>
 
-    </div>
-
-    <div class="footer-bottom">
-      <p>Copyright © 2025 Nukta Africa | Powered by RD-XI</p>
-    </div>
-  </footer>
-
-  <!-- ================= SCRIPTS ================= -->
-  <script src="js/menu.js"></script>
-  <script src="js/reveal.js"></script>
-  <script src="js/about.js"></script>
-
-
-
-</body>
-
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/menu.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/about.js"></script>
+  </body>
 </html>
